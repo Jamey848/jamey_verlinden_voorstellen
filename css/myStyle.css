@@ -1,0 +1,153 @@
+/* AI TRANSPARANCY.
+What AI helped me with:
+- Animations
+- Padding, Display:flex, font-family, margin (because I didn't know what they were and how they worked)
+- Background colors: 1. I'm not creative in colors, 2. Linear-gradient is difficult for me.
+- Cursor:pointer (I forgot... but we saw it in class during the html recap).
+*/
+
+body{ /* Make the background of the body nice and soft + I'm a huge fan of linear gradient stuff
+    but I don't know how to use it all that well; so that's what I use ai for. */
+    background: linear-gradient(160deg, #d4e2d4, #f0f4f0);
+
+    /* I know now however what the "deg" means:
+    - 0deg = 0°: top to bottom
+    - 90 deg = 90°: left to right
+    - 180 deg = 180°: bottom to top
+    etc.
+    
+    So at least ai thought me something.*/
+}
+
+.container-title{
+    background-color: #4a90e2; 
+    padding:20px;
+}
+
+h1{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* ==> Amazing font-family! So clean, so clear... And yes I had to look it up. */
+  font-size: 36px;          
+  font: bold;                                
+  color: #fff;               
+}
+
+h2{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-bottom:10px; /* IMPORTANT: MARGIN != PADDING (I keep mixing them toghether) */
+                        /* Margin = Amount of space outside of item (between div and body for example)
+                           Padding = Amount of space within that item (text in div for example) */
+}
+
+.proposal-list{
+  display: flex; /*(AI helped me with this) => Do this in order to justify items. */      
+  gap: 100px; /* (AI helped me with this) => The space between other div items. If this was 0px; all columns would stick to each other. */             
+  justify-content: center; 
+  margin-top: 100px; /* Create some space at top of div element; makes it not stick to close to other stuff. */    
+}
+
+.proposal{
+    border-radius:10px; /* => Round edges; not pointy, rounded! */
+    background: linear-gradient(135deg, #6fb1fc, #4364f7); /* Color order: Body = Soft blue, Proposal divs = Darker blue. Makes the proposals really pop out and stick out. */
+    width:400px;
+    height:400px;
+    /*border-bottom: 3px solid #333; Wanted an entier line instead of just underline... ow well.*/
+}
+
+.container-header{
+    display:flex;
+    justify-content: center;
+    font-size:30px;
+    text-decoration: underline;
+    margin-top:7px;
+}
+
+.container-description{
+    margin:5px;
+    margin-top:25px;
+    color:white;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.container-description-text{
+    size:18px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.proposal-link{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;            
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+.proposal:hover {
+    transform: scale(1.05); /* => This is ai generated; I don't have the slightest idea how animations work in css */
+}
+
+.image-container{
+    display:flex;
+    justify-content: right; /* horizontal centering */
+    align-items: right;
+}
+
+.image-style{
+    position:absolute;
+    bottom:355px;
+    right:-5px; /* By God manually controlling where to place something is hell */
+    width:800px;
+    height:500px;
+    clip-path: inset(120px 0 120px 0); /* => Able to crop pictures now! 
+    order goes like this:
+    - Top
+    - Right
+    - Bottom
+    - Left 
+    
+    You need to specify by how px you crop each side. Very usefull, because I wanted my image to be longer, as to not take in the entier screen.*/
+}
+
+.p1-title-container{
+    background: linear-gradient(135deg, #e0d6c4, #cfc1a8); /* => Cool pattern! Wish I could come up with it. Just ask ai for a "nice beige background" and you'll get this. */
+    position:absolute;
+    left:-5px; /* Ow yeah... positioning is not fun. And it's weird? 
+    Like left:5px moves it away 5px from the left? So it moves it to the right? That's why left:-5px is there: move it to the left.
+    Wait... why not just do right:5px then? 
+    UPDATE: DO NOT SAY RIGHT:5PX, EVERYTHING JUMPS TO THE RIGHT.*/
+    top:-5px;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    width:700px;
+    height:261px;
+}
+
+.p1-info-container{
+    position:relative;
+    background: linear-gradient(135deg, #6fb1fc, #4364f7);
+    top:250px;
+    border-radius: 5px;
+    margin:10px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:1px;
+    padding-bottom: 20px; /* => I don't understand... Why doesn't it matter whether this value is 20 or 100, nothing changes?*/
+}
+
+.breadtext{ /* Get it? Breadtext? Like "broodtekst" in a newspaper? I'm amazing at giving names */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size:18px;
+}
+
+.return-arrow{
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:15px;
+    left:20px;
+    cursor:pointer;
+}
