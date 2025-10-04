@@ -42,7 +42,7 @@ h2{
 
 .proposal-list{
   display: flex; /*(AI helped me with this) => Do this in order to justify items. */      
-  gap: 100px; /* (AI helped me with this) => The space between other div items. If this was 0px; all columns would stick to each other. */             
+  gap: 200px; /* (AI helped me with this) => The space between other div items. If this was 0px; all columns would stick to each other. */             
   justify-content: center; 
   margin-top: 100px; /* Create some space at top of div element; makes it not stick to close to other stuff. */    
 }
@@ -95,11 +95,11 @@ h2{
 
 .image-style{
     position:absolute;
-    bottom:355px;
-    right:-5px; /* By God manually controlling where to place something is hell */
+    top:0px;
+    right:0px;
     width:800px;
-    height:500px;
-    clip-path: inset(120px 0 120px 0); /* => Able to crop pictures now! 
+    height:420px;
+    clip-path: inset(50px 20px 120px 0); /* => Able to crop pictures now! 
     order goes like this:
     - Top
     - Right
@@ -112,11 +112,12 @@ h2{
 .p1-title-container{
     background: linear-gradient(135deg, #e0d6c4, #cfc1a8); /* => Cool pattern! Wish I could come up with it. Just ask ai for a "nice beige background" and you'll get this. */
     position:absolute;
+    top:0;
+    left:0;
     left:-5px; /* Ow yeah... positioning is not fun. And it's weird? 
     Like left:5px moves it away 5px from the left? So it moves it to the right? That's why left:-5px is there: move it to the left.
     Wait... why not just do right:5px then? 
     UPDATE: DO NOT SAY RIGHT:5PX, EVERYTHING JUMPS TO THE RIGHT.*/
-    top:-5px;
 
     display:flex;
     justify-content: center;
@@ -131,7 +132,7 @@ h2{
     background: linear-gradient(135deg, #6fb1fc, #4364f7);
     top:250px;
     border-radius: 5px;
-    margin:10px;
+    margin:20px;
     padding-left:20px;
     padding-right:20px;
     padding-top:1px;
