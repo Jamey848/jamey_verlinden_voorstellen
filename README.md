@@ -8,3 +8,10 @@ Maar hoe zouden we dat kunnen bijhouden? Op papier of via de transactiegeschiede
 Het kan moeilijk zijn om echt transparantie te scheppen in jouw koopgedrag. Daarom is ShopChap er om jou te hierbij te helpen!
 
 Ontdek meer over ShopChap via de html pagina naar "meer informatie" bij het segement van ShopChap.
+
+### 2. ProManage
+Een project managen is een belangrijke skill in de business wereld. Maar daarbuiten ook natuurlijk: change vloeit voort vanuit projecten. De moeilijkheid is er een
+in goeie banen lijden. Er zijn namelijk veel obstakels waar men zich hieraan ergert: vertragingen, onvoorziene kosten, ... De redder in nood? ProManage natuurlijk!
+Dankzij deze handige applicatie kan jij jouw project van begin tot einde opvolgen en monitoren.
+
+Ontdek meer over ProManage via de html pagina naar "meer informatie" bij het segement van ProManage.
